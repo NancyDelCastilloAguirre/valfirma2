@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">  
+    <script src="./js/script.js"></script>
+    <title>Validación de firma</title>
+</head>
+<body>
+    <div class="form">
+        <h2>Valida tu firma</h2>       
+        <hr>
+        <form id="formulario">
+
+            <p>Nombre</p>
+            <input  type="text" id="nombre" placeholder="Ingresa el nombre del documento aquí..">
+
+            <br><br>
+
+            <p>Mensaje</p>
+            <input  type="text" id="contenido" placeholder="Ingresa tu mensaje aquí..">
+
+            <br><br>
+
+            <p>Firma</p>
+            <input  type="text" id="firma" placeholder="Ingresa la firma digital aquí..">
+
+            <hr>
+
+            <button class="btn-fim" type="button" onclick="validar();" value="validar">Vallidar Firma Digital</button>
+        </form>
+
+        <a href="https://nancydelcastilloaguirre.github.io/creacionfirma/" class="btn-fim">Crear Firma Aqui..</a>
+    </div>
+</body>
+</html>
